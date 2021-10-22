@@ -1,20 +1,30 @@
 # Atividade 02 de TDD
 
-Uma pessoa deseja determinar o teclado de computador e a drives USB mais caros que podem ser adquiridos com um certo orçamento. Dadas as listas de preços de teclados e drives USB de um orçamento, encontre o custo para comprá-los. Caso não for possível comprar os dois itens retorne -1.
-
-## Example
-
-A pessoa consegue comprar 40 teclados + 12 drivers USB por 52 reais. Ou, 50 teclados + 8 drivers USB por 58 reais.
-
-Escolha a última lista como a opção mais cara e retorne seu valor.
-
-## Descrição da função
+Números Felizes
 
 
-Conclua a função retornarOrcamentoMaisCaro.
+Para saber se um número é feliz, você deve obter o quadrado de cada dígito deste número, em seguida você faz a soma desses resultados. 
 
-retornarOrcamentoMaisCaro tem o(s) seguinte(s) parâmetro(s):
+A seguir o mesmo procedimento deve ser feito com o valor resultante desta soma.
 
-valoresTeclados int [n]: os preços dos teclados
-valoresDriversUsb [m]: os preços dos drivers
-int b: o orçamento
+`Se ao repetir o procedimento diversas vezes obtivermos o valor 1, o número inicial é considerado feliz.`
+
+## Explicação
+
+Tomamos o 7, que é um número feliz:
+
+7² = 49
+
+4² + 9² = 97
+
+9² + 7² = 130
+
+1² + 3² + 0² = 10
+
+1² + 0² = 1
+
+Podemos observar nesse exemplo que os números 49, 97, 130 e 10 também são felizes. Existem infinitos números felizes.
+
+E um número triste? Como sabemos que um número não será feliz?
+
+Desenvolva um programa que determine se um número é feliz ou triste.
