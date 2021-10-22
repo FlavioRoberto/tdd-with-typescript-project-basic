@@ -1,30 +1,38 @@
-# Atividade 02 de TDD
+# Atividade 01 de Testes unitários
 
-Números Felizes
+Dado um tempo em horas no formato AM/PM, converta para o horário militar (24 horas).
 
+Nota: - 12:00:00AM no formato 12 horas é equivalente a 00:00:00 no formato 24 horas.
+- 12:00:00PM no formato 12 horas é equivalente a 12:00:00 no formato 24 horas.
 
-Para saber se um número é feliz, você deve obter o quadrado de cada dígito deste número, em seguida você faz a soma desses resultados. 
+## Examplo
 
-A seguir o mesmo procedimento deve ser feito com o valor resultante desta soma.
+Para o horário igual a '12:01:00 PM'
 
-`Se ao repetir o procedimento diversas vezes obtivermos o valor 1, o número inicial é considerado feliz.`
+Retorne '12:01:00'.
 
-## Explicação
+Para o horário igual a '12:01:00 AM'
 
-Tomamos o 7, que é um número feliz:
+Return '00:01:00'.
 
-7² = 49
+## Descrição da função
 
-4² + 9² = 97
+Complete a função conversaoTempo. Ela deverá retornar uma nova string representando o valor no formato de horas militar.
 
-9² + 7² = 130
+conversaoTempo terá os seguintes parametro(s):
 
-1² + 3² + 0² = 10
+string hora: hora no formato 12 horas.
 
-1² + 0² = 1
+## Formatacao do input
 
-Podemos observar nesse exemplo que os números 49, 97, 130 e 10 também são felizes. Existem infinitos números felizes.
+Uma string que representa o formato da hora a ser exibida.
 
-E um número triste? Como sabemos que um número não será feliz?
+### Exemplo: 
 
-Desenvolva um programa que determine se um número é feliz ou triste.
+hh:mm:ssAM ou hh:mm:ssPM
+
+### Exemplo de valores de entrada
+07:05:45PM
+
+### Exemplo de valores de saída
+19:05:45

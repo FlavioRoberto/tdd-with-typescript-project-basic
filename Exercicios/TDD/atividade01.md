@@ -1,9 +1,19 @@
 # Atividade 01 de TDD
 
-Dado um array com números inteiros, retorne o valor total da soma de seus números.
+## Objetivos
+Somar todos os números inteiros de uma string.
 
-Exemplo:
+Deverá ser lançado excessão caso encontre números negativos.
+Deverá ser lançado excessão caso todos os números sejam negativos.
+Deverá aceitar outros separadores, como ";" e " " (espaço).
 
-`[1,2,3]`
+### Exemplos
 
-`resultado esperado: 6`
+* "" resulta 0.
+* "3" resulta 3.
+* "2,3" resulta 5.
+* "2, -1" => Números negativos não são permitidos: -1.
+* "-2, -1" => Números negativos não são permitidos: -2, -1.
+
+
+

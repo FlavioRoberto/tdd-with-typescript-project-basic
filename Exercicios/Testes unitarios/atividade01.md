@@ -1,4 +1,4 @@
-# Atividade 01 de TDD
+# Atividade 01 de Testes unitários
 
 Um professor de Matemática Discreta tem uma turma de alunos. Frustrado com a falta de disciplina, o professor decide cancelar a aula se menos do que um certo número de alunos estiver presente no início da aula. Os tempos de chegada variam de pontual tempoChegada <= 0 à atrasado tempoChegada > 0.
 
